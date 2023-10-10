@@ -37,14 +37,14 @@ gcloud compute instances create $INSTANCE_NAME \
 ```
 gcloud compute instances add-tags $INSTANCE_NAME \
     --zone=$ZONE  \
-    --tag=nginx-server
+    --tags=nginx-server
 ```
 
 3. Add a firewall to allow access the server on port 80
 ```
 gcloud compute firewall-rules create http-allow-access-nginx-server \
     --allow=tcp:80 \
-    --target-tag=nginx-server
+    --target-tags=nginx-server
 ```
 
 
