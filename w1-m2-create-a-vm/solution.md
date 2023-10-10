@@ -16,7 +16,7 @@ export ZONE=$(gcloud config get compute/zone)
 ```
 
 ```
-export INSTANCE_NAME=wts-server-2
+export INSTANCE_NAME=wts-server-2 //use your name to avoid name conflicts
 ```
 
 ### Task1: Create VM instance manually.
